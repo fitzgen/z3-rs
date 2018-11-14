@@ -58,7 +58,6 @@ macro_rules! varop {
 }
 
 impl<'ctx> Ast<'ctx> {
-
     pub fn new(ctx: &Context, ast: Z3_ast) -> Ast {
         assert!(!ast.is_null());
         Ast {
